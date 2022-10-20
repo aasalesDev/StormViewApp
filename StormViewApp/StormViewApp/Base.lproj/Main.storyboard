@@ -25,15 +25,15 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Picture" textLabel="xAw-yI-Vuf" style="IBUITableViewCellStyleDefault" id="gfG-Qz-PW3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Picture" textLabel="xAw-yI-Vuf" style="IBUITableViewCellStyleDefault" id="gfG-Qz-PW3">
                                 <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gfG-Qz-PW3" id="bae-9U-vKI">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xAw-yI-Vuf">
-                                            <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                            <rect key="frame" x="20" y="0.0" width="334.66666666666669" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="932.30769230769226" y="23.459715639810426"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Storm Viewer-->
         <scene sceneID="dKf-F4-zHc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S4S-5I-TA5" sceneMemberID="viewController">
+                <navigationController title="Storm Viewer" automaticallyAdjustsScrollViewInsets="NO" id="S4S-5I-TA5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OoT-zJ-Alp">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
