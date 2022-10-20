@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UITableViewController {
     
     var pictures = [String]()
+    var sortedPictures = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,8 @@ class ViewController: UITableViewController {
             }
         }
         //tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        sortedPictures = pictures.sorted()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,15 +39,17 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //"Picture" is the name given to the tableview - check "document outline"
-        //An alternative would be to register a new tableview with another identifier, cell, for example -> (line 27)
+        //An alternative would be to register a new tableview with another identifier, cell, for example -> (line 30)
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
-        cell.textLabel?.text = pictures[indexPath.row]
+        cell.textLabel?.text = sortedPictures[indexPath.row]
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let detailVC = UIStoryboard(name: "DetailViewController", bundle: nil).instantiateViewController(withIdentifier: "detailScreen") as? DetailViewController {
             detailVC.image = pictures[indexPath.row]
+            detailVC.position = indexPath.row + 1
+            detailVC.images = sortedPictures
             navigationController?.pushViewController(detailVC , animated: true)
         }
     }

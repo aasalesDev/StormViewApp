@@ -10,13 +10,15 @@ import UIKit
 class DetailViewController: UIViewController {
     
     var image: String?
+    var images = [String]()
+    var position: Int?
     
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = image
+        title = "\(position ?? 0) of \(images.count)"
         navigationItem.largeTitleDisplayMode = .never
         
         if let imageToLoad = image {
