@@ -19,7 +19,7 @@ class ViewController: UITableViewController {
         let items = try! fm.contentsOfDirectory(atPath: path)
         
         for item in items {
-            if item.hasPrefix("nssl"){
+            if item.hasSuffix("jpg"){
                 //this is a picture to load!
                 pictures.append(item)
             }
@@ -39,5 +39,11 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let detailVC = UIStoryboard(name: "DetailViewController", bundle: nil).instantiateViewController(withIdentifier: "detailScreen") as? DetailViewController {
+            detailVC.image = pictures[indexPath.row]
+            navigationController?.pushViewController(detailVC , animated: true)
+        }
+    }
 }
 
