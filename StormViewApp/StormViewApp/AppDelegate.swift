@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  StormViewApp
+//  Social Media App
 //
-//  Created by Anderson Sales on 19/10/22.
+//  Created by Anderson Sales on 22/10/22.
 //
 
 import UIKit
