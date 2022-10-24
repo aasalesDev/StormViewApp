@@ -86,8 +86,8 @@
 				6CC99F952901BA48008CDEC1 /* DetailViewController.swift */,
 				6C42D50729003B4700062269 /* Main.storyboard */,
 				6CC99F972901BA80008CDEC1 /* DetailViewController.storyboard */,
-				6C42D50A29003B4800062269 /* Assets.xcassets */,
 				6C42D50C29003B4800062269 /* LaunchScreen.storyboard */,
+				6C42D50A29003B4800062269 /* Assets.xcassets */,
 				6C42D50F29003B4800062269 /* Info.plist */,
 				6C42D51529003C2E00062269 /* Content */,
 			);
